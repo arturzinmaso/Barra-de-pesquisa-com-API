@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*se eu definir uma largura e uma altura para um elemento, a área de conteúdo será ajustada para caber dentro dessas dimensões */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100vh; /* deixando a largura e a altura no máximo*/
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+}
+
+main{
+    width: 100%; /*vai ocupar 100% da largura mas o máximo dela é 300px */
+    max-width: 300px;
+}
+
+.divPesquisar{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /*a propriedade gap é para definir um espaço entre elementos em um layout de grid ou flexbox. */
+}
+
+input{
+    padding: 5px;
+    outline: none; /*sem contornos decorativos, outline serve para decorar sem afetar o layout da página como a borda */
+}
